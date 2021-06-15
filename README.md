@@ -1,7 +1,8 @@
 # df
 ### 接口文档
 下载项目后访问，里面有详尽的接口说明，这里展示一张图如下。
-该项目仅有后端访问的接口，前端https://gitee.com/dongyanyun/dongyangongyeyun是另一个同学写的。
+该项目仅有后端访问的接口，前端代码地址https://gitee.com/dongyanyun/dongyangongyeyun 。
+
 
 http://127.0.0.1:8000/docs/
 
