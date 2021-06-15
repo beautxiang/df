@@ -1,4 +1,6 @@
 from django.contrib import admin
+from rest_framework.documentation import include_docs_urls
+from django.conf.urls import url
 from django.urls import path, re_path, include
 from django.views.static import serve
 import equipment_management.urls
@@ -37,6 +39,7 @@ urlpatterns = [
     path('api.maintenance_management/', include(maintenance_management.urls)),
     path('api.inspection_management/', include(inspection_management.urls)),
     path('test/', test.as_view()),
+    url(r'docs/', include_docs_urls(title='接口文档')),
 ]
 # 配置此项才可以访问图片
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
